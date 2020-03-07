@@ -4,7 +4,7 @@ $(function() {
   var FADE_TIME = 150; // ms
   var TYPING_TIMER_LENGTH = 400; // ms
   var COLORS = [
-    '#007aff', '#ff3b30'
+    '#636366'
   ];
 
   // Initialize variables
@@ -229,7 +229,7 @@ $(function() {
   socket.on('login', function (data) {
     connected = true;
     // Display the welcome message
-    var message = "Welcome to Speechat";
+    var message = "Welcome to Speedchat";
     log(message, {
       prepend: true
     });
