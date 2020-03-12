@@ -1,2 +1,3 @@
 # Speedchat
-Instant registration and verification free chat made using [socket.io](http://socket.io/)
+anonymous and registration free real time multidirectional communication
+made possible by [socket.io](http://socket.io/) 
