@@ -65,7 +65,7 @@ ul {
 .login.page .form .usernameInput {
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #636366;
   outline: none;
   padding-bottom: 15px;
   text-align: center;
@@ -74,15 +74,16 @@ ul {
 
 .login.page .title {
   font-size: 200%;
+  letter-spacing: 2px;
 }
 
 .login.page .usernameInput {
   font-size: 200%;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 
 .login.page .title, .login.page .usernameInput {
-  color: #000000;
+  color: #636366;
   font-weight: 100;
 }
 
@@ -96,6 +97,7 @@ ul {
 
 .messages {
   font-size: 150%;
+  color: #000000;
 }
 
 .inputMessage {

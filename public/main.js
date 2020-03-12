@@ -1,11 +1,9 @@
 /* global io */
 
 $(function() {
-  var FADE_TIME = 150; // ms
-  var TYPING_TIMER_LENGTH = 400; // ms
-  var COLORS = [
-    '#0a84ff'
-  ];
+  var FADE_TIME = 150 // ms
+  var TYPING_TIMER_LENGTH = 400 // ms
+  var COLOR = '#636366'
 
   // Initialize variables
   var $window = $(window);
@@ -28,9 +26,9 @@ $(function() {
   function addParticipantsMessage (data) {
     var message = '';
     if (data.numUsers === 1) {
-      message += "there is 1 user";
+      message += "1 user online";
     } else {
-      message += "there are " + data.numUsers + " users";
+      message += data.numUsers + " users online ";
     }
     log(message);
   }
@@ -184,8 +182,8 @@ $(function() {
        hash = username.charCodeAt(i) + (hash << 5) - hash;
     }
     // Calculate color
-    var index = Math.abs(hash % COLORS.length);
-    return COLORS[index];
+    //var index = Math.abs(hash % COLORS.length);
+    return COLOR;
   }
 
   // Keyboard events
@@ -229,10 +227,10 @@ $(function() {
   socket.on('login', function (data) {
     connected = true;
     // Display the welcome message
-    var message = "Welcome to Speechat";
-    log(message, {
-      prepend: true
-    });
+    // var message = "Welcome to Speedchat";
+    // log(message, {
+    //   prepend: true
+    // });
     addParticipantsMessage(data);
   });
 
